@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    padding: 2rem;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+#container {
+    margin-top: 4rem;
+    display: flex;
+}
+
+#container .group {
+    flex: 1;
+}
+
+#container .group .title {
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+#container .group .item {
+    margin-top: 1rem;
+}
