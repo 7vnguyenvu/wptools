@@ -30,3 +30,31 @@ h1 {
 #container .group .item {
     margin-top: 1rem;
 }
+
+/* Thêm vào file style.css của bạn */
+.user-info {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    color: white;
+    padding: .4rem .8rem;
+    border-end-start-radius: .8rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.user-info button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.user-info button:hover {
+    background-color: #d32f2f;
+}
