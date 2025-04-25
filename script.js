@@ -194,7 +194,8 @@ style.textContent = `
         right: 0;
         background-color: #333;
         color: white;
-        padding: 10px 15px;
+        padding: .4rem .8rem;
+        border-end-start-radius: .8rem;
         display: flex;
         align-items: center;
         gap: 15px;
