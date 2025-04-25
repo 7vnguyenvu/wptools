@@ -1,7 +1,9 @@
+const BASE_URL = "https://7vnguyenvu.github.io/wptools";
+
 document.addEventListener("DOMContentLoaded", function () {
     // Kiểm tra nếu người dùng đã đăng nhập, chuyển hướng về trang chính
     if (isLoggedIn()) {
-        window.location.href = "../";
+        window.location.href = `${BASE_URL}/`;
     }
 
     const loginForm = document.getElementById("loginForm");
@@ -50,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         localStorage.removeItem("redirectAfterLogin");
                         window.location.href = redirectUrl;
                     } else {
-                        window.location.href = "../";
+                        window.location.href = `${BASE_URL}/`;
                     }
                 } else {
                     // Hiển thị thông báo lỗi
