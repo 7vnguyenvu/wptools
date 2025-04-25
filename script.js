@@ -1,3 +1,5 @@
+const BASE_URL = "https://7vnguyenvu.github.io/wptools";
+
 document.addEventListener("DOMContentLoaded", function () {
     // Hiển thị trạng thái đăng nhập để debug
     console.log("Kiểm tra đăng nhập...");
@@ -10,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!isLoggedIn()) {
             // Lưu lại URL hiện tại để điều hướng trở lại sau khi đăng nhập
             localStorage.setItem("redirectAfterLogin", window.location.href);
-            window.location.href = "/signin/";
+            window.location.href = `${BASE_URL}/signin/`;
         } else {
             // Đã đăng nhập, hiển thị thông tin người dùng
             displayUserInfo();
@@ -25,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
         // Nếu đang ở trang đăng nhập nhưng đã đăng nhập rồi
         if (isLoggedIn()) {
-            window.location.href = "../";
+            window.location.href = `${BASE_URL}/`;
         }
     }
 });
@@ -180,7 +182,7 @@ function logout() {
     document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
     // Chuyển hướng về trang đăng nhập
-    window.location.href = "/signin/";
+    window.location.href = `${BASE_URL}/signin/`;
 }
 
 // Thêm CSS cho nút debug và logout
