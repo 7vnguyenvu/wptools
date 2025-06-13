@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                 } else {
                     // Hiển thị thông báo lỗi
-                    errorMessage.textContent = data.message || "Tên đăng nhập hoặc mật khẩu không đúng!";
+                    errorMessage.textContent = "Tên đăng nhập hoặc mật khẩu không đúng!";
                     errorMessage.style.color = "red";
                     errorMessage.style.display = "block";
                 }
